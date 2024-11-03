@@ -4,21 +4,25 @@ const numbers = [10, 13, 20, 25, 38, 35, 40];
 // 1) Using `greaterThanTwentyFive` function that returns a new array containing numbers that are greater than or equal to 25.
 const greaterThanTwentyFive = (numbers) => {
   // write your code here...
+  return numbers.filter((n) => n >= 25);
 };
 
 // 2) Using `divisibleByFive` function return a new array containing numbers that are divisible by 5.
 const divisibleByFive = (numbers) => {
   // write your code here...
+  return numbers.filter((n) => !(n % 5));
 };
 
 // 3) Using `squaredNumbers` function return a new array that contains each number squared.
 const squaredNumbers = (numbers) => {
   // write your code here...
+  return numbers.map((n) => n * n);
 };
 
 // 4) Using `doubledNumbers` function return a new array that contains each number multiplied by 2.
 const doubledNumbers = (numbers) => {
   // write your code here...
+  return numbers.map((n) => n * 2);
 };
 
 // 5) Using `filteredAndSquared` function return the numbers that are greater than or equal to 20 and then square each of them.
@@ -46,6 +50,7 @@ function toCelsius(temperatures) {
 // 3) using `hottestDays` function return an array of temperatures that exceed the threshold
 function hottestDays(temperatures, threshold) {
   // write your code here...
+  return temperatures.filter((t) => t > threshold);
 }
 
 // 4) Using `logHottestDays` function log temperatures that exceed the threshold to the console IN DEGREES CELSIUS  (hint: you can combine all previous functions)
