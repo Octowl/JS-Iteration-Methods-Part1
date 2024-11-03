@@ -28,6 +28,7 @@ const doubledNumbers = (numbers) => {
 // 5) Using `filteredAndSquared` function return the numbers that are greater than or equal to 20 and then square each of them.
 const filteredAndSquared = (numbers) => {
   // write your code here...
+  return numbers.filter((n) => n >= 20).map((n) => n * n);
 };
 
 // 6) Using `filteredAndTripled` return the numbers that are divisible by 5 and then multiply each of them by 3.
